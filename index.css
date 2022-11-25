@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+
+/*全体背景色*/
+html{
+    background-image:url("夜空.jpeg");
+    background-color rgb(5, 17, 90);
+}
+/*全体を中央揃え*/
+body{
+    width: 800px;
+    margin:0 auto;
+    text-align: center;
+}
+
+
+
+/*リンク*/
+a{
+    color: rgb(209, 209, 248);
+}
+a:visited{
+    color:rgb(120, 156, 209)
+}
+a:hover{
+    color: rgb(126, 166, 222);
+}
+a:active{
+    background-color: rgb(13, 21, 44);
+}
+
+
+
+/*テロップ*/
+.scroll{
+    margin:auto;
+    width:100%;
+    color:#eee8e8;
+
+    overflow:hidden;
+    background-color:rgba(70, 107, 109, 0.66);
+}
+.news{
+    font-size:14px;
+    font-family: serif, Century, "Century Gothic";
+    display:inline-block;
+    padding-left:100%;
+    white-space:nowrap;
+    line-height:1em;
+    animation:scrollAnime 18s linear infinite;
+}
+.URL{
+    font-size:14px;
+    font-family: serif, Century, "Century Gothic";
+    display:inline-block;
+    padding-left:100%;
+    white-space:nowrap;
+    line-height:1em;
+    animation:scrollAnime 18s linear infinite;
+}
+.news div{display:inline-block;margin-right:10px;}
+@keyframes scrollAnime{
+    0%{transform:translateX(0)}
+    100%{transform:translateX(-100%)}
+}
+
+
+
+/*タイトル帯*/
+header{
+    font-size: 20px;
+    font-family: serif, Century, "Century Gothic";
+    color: rgb(232, 228, 228);
+    text-align: center;
+    background-image:url("夜の波.jpeg");
+}
+
+
+
+/*もくじぼたん*/
+nav{
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/*本編の背景色*/
+article{
+    background-image:url("大理石.jpeg");
+}
+h1{
+    font-family: serif, Century, "Century Gothic";
+    font-size: 30px;
+}
+
+
+
+/*ふきだし*/
+h2{
+    position: relative;
+    padding: 0.6em;
+    background: rgb(5, 17, 90);
+    width: 300px;
+    margin:0 auto;
+    color: rgb(249, 249, 227);
+}
+h2:after{
+    position: absolute;
+    content: '';
+    top: 100%;
+    left: 30px;
+    border: 15px solid transparent;
+    border-top: 15px solid rgb(5, 17, 90);
+    width: 0;
+    height: 0;
+}
+
+
+
+/*内容の本文と最後のとこのフォント*/
+p{
+    font-family: serif, Century, "Century Gothic";
+    font-size: 17px;
+}
+
+
+
+/*所属*/
+footer{
+    background-image:url("夜の波.jpeg");
+    color: white;
+}
